@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Financial Physicals | Services & Leadership</title>
+  <title>Evidence and Insights LLC | Services & Leadership</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -10,9 +10,9 @@
   <header class="site-header">
     <div class="container header-content">
       <div class="logo">
-        <span class="logo-mark">FP</span>
+        <span class="logo-mark">EI</span>
         <div class="logo-text">
-          <span class="logo-title">FinancialPhysicals</span>
+          <span class="logo-title">Evidence and Insights LLC</span>
           <span class="logo-subtitle">Real-World Insights, Real Impact</span>
         </div>
       </div>
@@ -92,13 +92,6 @@
     <!-- LEADERSHIP -->
     <section class="section light">
       <div class="container leadership-grid">
-        <!--<div class="leadership-image-wrapper">
-          <img 
-            src="images/chioma-portrait-placeholder.jpg" 
-            alt="Portrait placeholder for Chioma Amadi-Mgbenka" 
-            class="leadership-image"
-          >
-        </div>-->
         <div class="leadership-text">
           <h1>Leadership</h1>
           <h2>Chioma Amadi-Mgbenka</h2>
@@ -136,11 +129,10 @@
           </p>
 
           <p class="contact-email">
-            Email: <a href="mailto:financialphysicals@gmail.com">financialphysicals@gmail.com</a>
+            Email: <a href="mailto:evidenceandinsightsllc@gmail.com">evidenceandinsightsllc@gmail.com</a>
           </p>
         </div>
 
-        <!-- IMPORTANT: replace the action URL with your own Formspree endpoint -->
         <form 
           class="contact-form" 
           id="contact-form"
@@ -162,8 +154,7 @@
             <textarea name="message" rows="5" required></textarea>
           </label>
 
-          <!-- Formspree recommends a real email field name -->
-          <input type="hidden" name="_subject" value="New message from FinancialPhysicals contact form">
+          <input type="hidden" name="_subject" value="New message from Evidence and Insights LLC contact form">
 
           <button type="submit" class="btn-primary contact-btn">Send Message</button>
 
@@ -175,14 +166,12 @@
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>&copy; <span id="year"></span> FinancialPhysicals. All rights reserved.</p>
-      <p class="footer-domain">www.financialphysicals.com</p>
+      <p>&copy; <span id="year"></span> Evidence and Insights LLC. All rights reserved.</p>
+      <p class="footer-domain">www.evidenceandinsightsllc.com</p>
     </div>
     <script>
-      // Year in footer
       document.getElementById('year').textContent = new Date().getFullYear();
 
-      // Contact form handling with Formspree
       const form = document.getElementById('contact-form');
       const statusEl = document.getElementById('form-status');
 
@@ -196,9 +185,7 @@
           const response = await fetch(form.action, {
             method: form.method,
             body: data,
-            headers: {
-              'Accept': 'application/json'
-            }
+            headers: { 'Accept': 'application/json' }
           });
 
           if (response.ok) {
